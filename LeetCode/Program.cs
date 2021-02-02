@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace LeetCode
 {
@@ -6,11 +7,24 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var votes = new string[]{ "ABC", "ACB", "ABC", "ACB", "ACB" };
-            Console.WriteLine(T1366.RankTeams(votes));
+            var sw = new Stopwatch();
+            while(Console.Read() >= 0)
+            {
+                break;
+            }
+            sw.Start();
+            var a = 0;
+            for(var i = 0; i < 10000000; i++)
+            {
+                Guid.NewGuid();
+                //a = i;
+            }
+            sw.Stop();
+            TimeSpan ts = sw.Elapsed;
+            Console.WriteLine(ts.TotalMilliseconds);
             Console.ReadKey();
         }
-       
+        
     }
   
 }
