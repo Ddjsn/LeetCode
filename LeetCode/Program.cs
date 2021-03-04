@@ -1,5 +1,7 @@
-﻿using System;
+﻿using LeetCode._1_100;
+using System;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace LeetCode
 {
@@ -7,24 +9,20 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var sw = new Stopwatch();
-            while(Console.Read() >= 0)
-            {
-                break;
-            }
-            sw.Start();
-            var a = 0;
-            for(var i = 0; i < 10000000; i++)
-            {
-                Guid.NewGuid();
-                //a = i;
-            }
-            sw.Stop();
-            TimeSpan ts = sw.Elapsed;
-            Console.WriteLine(ts.TotalMilliseconds);
-            Console.ReadKey();
+            // Create a point struct.
+            new T64().MinPathSum(new int[][]{ new int[]{ 1, 3, 1}, new int[]{ 1, 5, 1 },new int[]{ 4, 2, 1 } });
         }
-        
+
+        public struct Point
+        {
+            public int x;
+            public int y;
+        }
+        public class aa
+        {
+            public int y;
+            private Point a;
+        }
     }
-  
+
 }
