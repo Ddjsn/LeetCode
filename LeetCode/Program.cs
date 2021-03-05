@@ -9,20 +9,10 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            // Create a point struct.
-            new T64().MinPathSum(new int[][]{ new int[]{ 1, 3, 1}, new int[]{ 1, 5, 1 },new int[]{ 4, 2, 1 } });
+            Console.WriteLine(new T121().MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 }));
+            Console.ReadLine();
         }
 
-        public struct Point
-        {
-            public int x;
-            public int y;
-        }
-        public class aa
-        {
-            public int y;
-            private Point a;
-        }
     }
 
 }
